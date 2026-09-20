@@ -1,0 +1,12 @@
+# YouTube MP3 Downloader - Links File
+# Add one YouTube URL per line.
+# Blank lines and lines starting with '#' will be ignored.
+
+# Sample 1: Alan Walker - Fade [NCS Release]
+https://www.youtube.com/watch?v=bM7SZ5SBzyY
+
+# Sample 2: Cartoon - On & On (feat. Daniel Levi) [NCS Release]
+https://www.youtube.com/watch?v=K4DyBUG242c
+
+# Sample 3: DEAF KEV - Invincible [NCS Release]
+https://www.youtube.com/watch?v=J2X5mJ3HDYE

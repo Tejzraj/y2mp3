@@ -1,0 +1,11 @@
+# Virtual environment
+venv/
+.venv/
+
+# Downloaded files & logs
+storage/downloads/*.mp3
+logs/*.log
+
+# Python cache files
+__pycache__/
+*.pyc
