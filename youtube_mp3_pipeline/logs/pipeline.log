@@ -1,1 +1,41 @@
 # YouTube MP3 Downloader Pipeline Log
+2026-09-23 19:46:16 [INFO] [core.direct_engine]: Loaded 3 URL(s) from 'links.txt'
+2026-09-23 19:46:16 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://www.youtube.com/watch?v=bM7SZ5SBzyY
+2026-09-23 19:46:17 [ERROR] [core.direct_engine]: [Direct Engine] Download error: [0;31mERROR:[0m [youtube] bM7SZ5SBzyY: Unable to download API page: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006) (caused by CertificateVerifyError('[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+2026-09-23 19:46:17 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://www.youtube.com/watch?v=K4DyBUG242c
+2026-09-23 19:46:17 [ERROR] [core.direct_engine]: [Direct Engine] Download error: [0;31mERROR:[0m [youtube] K4DyBUG242c: Unable to download API page: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006) (caused by CertificateVerifyError('[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+2026-09-23 19:46:17 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://www.youtube.com/watch?v=J2X5mJ3HDYE
+2026-09-23 19:46:18 [ERROR] [core.direct_engine]: [Direct Engine] Download error: [0;31mERROR:[0m [youtube] J2X5mJ3HDYE: Unable to download API page: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006) (caused by CertificateVerifyError('[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+2026-09-23 19:46:39 [INFO] [core.direct_engine]: Loaded 3 URL(s) from 'links.txt'
+2026-09-23 19:46:39 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://www.youtube.com/watch?v=bM7SZ5SBzyY
+2026-09-23 19:46:39 [ERROR] [core.direct_engine]: [Direct Engine] Download error: [0;31mERROR:[0m [youtube] bM7SZ5SBzyY: Unable to download API page: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006) (caused by CertificateVerifyError('[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+2026-09-23 19:46:39 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://www.youtube.com/watch?v=K4DyBUG242c
+2026-09-23 19:46:40 [ERROR] [core.direct_engine]: [Direct Engine] Download error: [0;31mERROR:[0m [youtube] K4DyBUG242c: Unable to download API page: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006) (caused by CertificateVerifyError('[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+2026-09-23 19:46:40 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://www.youtube.com/watch?v=J2X5mJ3HDYE
+2026-09-23 19:46:41 [ERROR] [core.direct_engine]: [Direct Engine] Download error: [0;31mERROR:[0m [youtube] J2X5mJ3HDYE: Unable to download API page: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006) (caused by CertificateVerifyError('[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)')); please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+2026-09-23 19:46:45 [INFO] [core.web_engine]: [Web Engine] Navigating flagaflaga.pl for URL: https://www.youtube.com/watch?v=bM7SZ5SBzyY
+2026-09-23 19:46:52 [INFO] [core.web_engine]: [Web Engine] URL entered into input field.
+2026-09-23 19:46:52 [INFO] [core.web_engine]: [Web Engine] Conversion initiated. Waiting for download button...
+2026-09-23 19:46:52 [INFO] [core.web_engine]: [Web Engine] Download button available. Triggering file download...
+2026-09-23 19:47:52 [ERROR] [core.web_engine]: [Web Engine] Operation timed out after 60s waiting for site response.
+2026-09-23 19:47:52 [INFO] [core.web_engine]: [Web Engine] Navigating flagaflaga.pl for URL: https://www.youtube.com/watch?v=K4DyBUG242c
+2026-09-23 19:47:55 [INFO] [core.web_engine]: [Web Engine] URL entered into input field.
+2026-09-23 19:47:56 [INFO] [core.web_engine]: [Web Engine] Conversion initiated. Waiting for download button...
+2026-09-23 19:47:56 [INFO] [core.web_engine]: [Web Engine] Download button available. Triggering file download...
+2026-09-23 19:48:45 [INFO] [core.web_engine]: [Web Engine] Navigating flagaflaga.pl for URL: https://youtu.be/YKLX3QbKBg0
+2026-09-23 19:48:48 [INFO] [core.web_engine]: [Web Engine] URL entered into input field.
+2026-09-23 19:48:48 [INFO] [core.web_engine]: [Web Engine] Conversion initiated. Waiting for download button...
+2026-09-23 19:48:48 [INFO] [core.web_engine]: [Web Engine] Download button available. Triggering file download...
+2026-09-23 19:49:48 [ERROR] [core.web_engine]: [Web Engine] Operation timed out after 60s waiting for site response.
+2026-09-23 19:55:58 [INFO] [core.direct_engine]: Loaded 1 URL(s) from 'links.txt'
+2026-09-23 19:55:58 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/YKLX3QbKBg0
+2026-09-23 19:56:05 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Joker BGM Song (Bass Boosted).mp3'
+2026-09-23 19:56:05 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Joker BGM Song (Bass Boosted)' -> Joker BGM Song (Bass Boosted).mp3
+2026-09-23 19:57:05 [INFO] [core.direct_engine]: Loaded 1 URL(s) from 'links.txt'
+2026-09-23 19:57:05 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/YKLX3QbKBg0
+2026-09-23 19:57:11 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Joker BGM Song (Bass Boosted).mp3'
+2026-09-23 19:57:11 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Joker BGM Song (Bass Boosted)' -> Joker BGM Song (Bass Boosted).mp3
+2026-09-23 22:43:29 [INFO] [core.direct_engine]: Loaded 1 URL(s) from 'links.txt'
+2026-09-23 22:43:29 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/YKLX3QbKBg0
+2026-09-23 22:43:36 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Joker BGM Song (Bass Boosted).mp3'
+2026-09-23 22:43:36 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Joker BGM Song (Bass Boosted)' -> Joker BGM Song (Bass Boosted).mp3

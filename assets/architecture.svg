@@ -1,158 +1,130 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="100%" height="100%">
   <defs>
-    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#07090E"/>
-      <stop offset="100%" stop-color="#0D111A"/>
+    <!-- Dark Tech Canvas Gradient -->
+    <linearGradient id="canvasGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0D10"/>
+      <stop offset="100%" stop-color="#11151A"/>
     </linearGradient>
 
-    <linearGradient id="neonOrange" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF5500"/>
+    <!-- Glowing Conduits -->
+    <linearGradient id="orangeFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF7A00"/>
       <stop offset="100%" stop-color="#FFAA00"/>
     </linearGradient>
 
-    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00D2FF"/>
-      <stop offset="100%" stop-color="#00F0FF"/>
+    <linearGradient id="cyanFlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D9FF"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
     </linearGradient>
 
-    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8A2BE2"/>
-      <stop offset="100%" stop-color="#C084FC"/>
-    </linearGradient>
-
-    <pattern id="archGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#141923" stroke-width="0.75"/>
+    <!-- Subtle Tech Grid -->
+    <pattern id="gridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#161B22" stroke-width="0.75"/>
     </pattern>
 
-    <filter id="glowLight" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <!-- Node Glow Filter -->
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
     </filter>
   </defs>
 
   <style>
-    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Roboto Mono', Menlo, Consolas, monospace; }
-    .node-title { font-weight: bold; font-size: 13px; }
-    .node-sub { font-size: 10px; fill: #8B949E; }
+    .mono { font-family: -apple-system, BlinkMacSystemFont, 'SF Mono', 'JetBrains Mono', Consolas, monospace; }
+    .title { font-weight: 700; font-size: 13px; fill: #F5F7FA; }
+    .sub { font-size: 10px; fill: #8B949E; }
+    .tag { font-size: 9px; font-weight: 600; letter-spacing: 0.5px; }
   </style>
 
-  <!-- Canvas Box -->
-  <rect width="960" height="480" rx="14" fill="url(#archBg)" stroke="#1F2433" stroke-width="1.5"/>
-  <rect width="960" height="480" rx="14" fill="url(#archGrid)"/>
+  <!-- Background Canvas -->
+  <rect width="820" height="440" rx="12" fill="url(#canvasGrad)" stroke="#1F242D" stroke-width="1.2"/>
+  <rect width="820" height="440" rx="12" fill="url(#gridPattern)"/>
 
-  <!-- Top Banner Info -->
-  <g transform="translate(30, 32)">
-    <text x="0" y="0" class="mono" font-size="13" font-weight="bold" fill="#FF7700">y2mp3 // SYSTEM ARCHITECTURE &amp; EXECUTION TOPOLOGY</text>
-    <text x="0" y="18" class="mono" font-size="10.5" fill="#6B7280">Modular decoupling of extraction engines, audio transcoding, and metadata mutators</text>
+  <!-- Top Accent Bar -->
+  <path d="M 0 12 Q 0 0 12 0 L 808 0 Q 820 0 820 12" fill="none" stroke="#FF7A00" stroke-width="2" opacity="0.85"/>
+
+  <!-- Top Metadata Info -->
+  <g transform="translate(24, 24)">
+    <circle cx="0" cy="0" r="4" fill="#FF7A00" filter="url(#softGlow)"/>
+    <text x="12" y="3" class="mono" font-size="11" font-weight="700" fill="#FF7A00">y2mp3</text>
+    <text x="56" y="3" class="mono" font-size="11" fill="#4B5563">::</text>
+    <text x="72" y="3" class="mono" font-size="10.5" fill="#8B949E">SYSTEM ARCHITECTURE &amp; EXECUTION TOPOLOGY</text>
   </g>
 
-  <!-- Stage 1: Input Queue -->
-  <g transform="translate(40, 90)">
-    <rect width="180" height="85" rx="8" fill="#0E131F" stroke="#2D3748" stroke-width="1.2"/>
-    <rect width="180" height="24" rx="8" fill="#161E2E" stroke="#2D3748" stroke-width="1"/>
-    <text x="14" y="16" class="mono" font-size="10" font-weight="bold" fill="#00E5FF">INPUT QUEUE</text>
-    <text x="14" y="46" class="mono node-title" fill="#FFFFFF">storage/links.txt</text>
-    <text x="14" y="64" class="mono node-sub">Sequential URL reader</text>
-    <text x="14" y="76" class="mono node-sub">Comment &amp; whitespace filter</text>
+  <!-- ==================== STAGE 1: INPUT ==================== -->
+  <g transform="translate(320, 48)">
+    <rect width="180" height="48" rx="8" fill="#11151A" stroke="#2D333F" stroke-width="1.2"/>
+    <rect x="1" y="1" width="178" height="16" rx="7" fill="#161B22"/>
+    <text x="10" y="12" class="mono tag" fill="#00D9FF">INPUT QUEUE</text>
+    <text x="10" y="34" class="mono title">storage/links.txt</text>
   </g>
 
-  <!-- Connector: Input -> Controller -->
-  <path d="M 220 132 L 270 132" fill="none" stroke="#00E5FF" stroke-width="1.8" stroke-dasharray="4 3"/>
-  <polygon points="274,132 267,128 267,136" fill="#00E5FF"/>
+  <!-- Connector: Input -> Router -->
+  <path d="M 410 96 L 410 124" fill="none" stroke="#00D9FF" stroke-width="1.8"/>
+  <polygon points="410,128 406,120 414,120" fill="#00D9FF"/>
 
-  <!-- Stage 2: CLI Controller & Engine Router -->
-  <g transform="translate(276, 90)">
-    <rect width="200" height="85" rx="8" fill="#0E131F" stroke="#FF7700" stroke-width="1.2" filter="url(#glowLight)"/>
-    <rect width="200" height="24" rx="8" fill="#1C1813" stroke="#FF7700" stroke-width="1"/>
-    <text x="14" y="16" class="mono" font-size="10" font-weight="bold" fill="#FF7700">CLI ROUTER // main.py</text>
-    <text x="14" y="46" class="mono node-title" fill="#FFFFFF">--engine Selector</text>
-    <text x="14" y="64" class="mono node-sub">DirectYtdlpEngine [Default]</text>
-    <text x="14" y="76" class="mono node-sub">WebFlagaEngine [Fallback]</text>
+  <!-- ==================== STAGE 2: CLI ROUTER ==================== -->
+  <g transform="translate(290, 128)">
+    <rect width="240" height="52" rx="8" fill="#11151A" stroke="#FF7A00" stroke-width="1.2" filter="url(#softGlow)"/>
+    <rect x="1" y="1" width="238" height="16" rx="7" fill="#1C1813"/>
+    <text x="10" y="12" class="mono tag" fill="#FF7A00">CLI ROUTER // main.py</text>
+    <text x="10" y="34" class="mono title">--engine Selector</text>
+    <text x="10" y="46" class="mono sub">Validates dependencies &amp; queue</text>
   </g>
 
-  <!-- Connector: Split Branches -->
-  <!-- Direct Path (Upwards) -->
-  <path d="M 476 120 L 520 120 L 520 70 L 550 70" fill="none" stroke="#FF7700" stroke-width="2"/>
-  <polygon points="554,70 547,66 547,74" fill="#FF7700"/>
-  <text x="490" y="58" class="mono" font-size="9" fill="#FF7700" font-weight="bold">--engine direct</text>
+  <!-- Branch Conduits: Router -> Engines -->
+  <!-- Left Branch (Direct) -->
+  <path d="M 330 180 L 330 206 L 220 206 L 220 226" fill="none" stroke="#FF7A00" stroke-width="1.8"/>
+  <polygon points="220,230 216,222 224,222" fill="#FF7A00"/>
+  <text x="230" y="218" class="mono tag" fill="#FF7A00">--engine direct</text>
 
-  <!-- Web Path (Downwards) -->
-  <path d="M 476 144 L 520 144 L 520 200 L 550 200" fill="none" stroke="#00E5FF" stroke-width="2"/>
-  <polygon points="554,200 547,196 547,204" fill="#00E5FF"/>
-  <text x="490" y="215" class="mono" font-size="9" fill="#00E5FF" font-weight="bold">--engine web</text>
+  <!-- Right Branch (Web) -->
+  <path d="M 490 180 L 490 206 L 600 206 L 600 226" fill="none" stroke="#00D9FF" stroke-width="1.8"/>
+  <polygon points="600,230 596,222 604,222" fill="#00D9FF"/>
+  <text x="508" y="218" class="mono tag" fill="#00D9FF">--engine web</text>
 
-  <!-- Stage 3A: Direct Engine (yt-dlp) -->
-  <g transform="translate(556, 30)">
-    <rect width="364" height="82" rx="8" fill="#0C121E" stroke="#FF7700" stroke-width="1.2"/>
-    <rect width="364" height="22" rx="8" fill="#1A1813" stroke="#FF7700" stroke-width="0.8"/>
-    <text x="12" y="15" class="mono" font-size="9.5" font-weight="bold" fill="#FFAA00">ENGINE 1: DIRECT EXTRACTION (core/direct_engine.py)</text>
-    <text x="12" y="42" class="mono" font-size="12" font-weight="bold" fill="#FFFFFF">yt-dlp Stream Demuxer</text>
-    <text x="12" y="58" class="mono node-sub">Extracts audio stream directly from source servers</text>
-    <text x="12" y="72" class="mono node-sub">Bypasses intermediary scraper &amp; third-party rate limits</text>
+  <!-- ==================== STAGE 3A: DIRECT ENGINE ==================== -->
+  <g transform="translate(100, 230)">
+    <rect width="240" height="56" rx="8" fill="#11151A" stroke="#FF7A00" stroke-width="1.2"/>
+    <rect x="1" y="1" width="238" height="16" rx="7" fill="#1C1813"/>
+    <text x="10" y="12" class="mono tag" fill="#FF7A00">PRIMARY // core/direct_engine.py</text>
+    <text x="10" y="34" class="mono title">yt-dlp Direct Stream</text>
+    <text x="10" y="48" class="mono sub">Direct stream demuxing + thumbnail</text>
   </g>
 
-  <!-- Stage 3B: Web Engine (Playwright) -->
-  <g transform="translate(556, 160)">
-    <rect width="364" height="82" rx="8" fill="#08141E" stroke="#00E5FF" stroke-width="1.2"/>
-    <rect width="364" height="22" rx="8" fill="#0C1F2B" stroke="#00E5FF" stroke-width="0.8"/>
-    <text x="12" y="15" class="mono" font-size="9.5" font-weight="bold" fill="#00E5FF">ENGINE 2: WEB AUTOMATION (core/web_engine.py)</text>
-    <text x="12" y="42" class="mono" font-size="12" font-weight="bold" fill="#FFFFFF">Playwright Headless Chromium</text>
-    <text x="12" y="58" class="mono node-sub">Automates flagaflaga.pl with active ad-tab interception</text>
-    <text x="12" y="72" class="mono node-sub">Submits form, awaits HTMX conversion, triggers download</text>
+  <!-- ==================== STAGE 3B: WEB ENGINE ==================== -->
+  <g transform="translate(480, 230)">
+    <rect width="240" height="56" rx="8" fill="#11151A" stroke="#00D9FF" stroke-width="1.2"/>
+    <rect x="1" y="1" width="238" height="16" rx="7" fill="#0F1B24"/>
+    <text x="10" y="12" class="mono tag" fill="#00D9FF">FALLBACK // core/web_engine.py</text>
+    <text x="10" y="34" class="mono title">Playwright Web Scraper</text>
+    <text x="10" y="48" class="mono sub">flagaflaga.pl automation + ad blocker</text>
   </g>
 
-  <!-- Stage 4: Processing & Transcoding -->
-  <!-- Direct Path goes to FFmpeg Transcode + Mutagen -->
-  <g transform="translate(180, 275)">
-    <rect width="330" height="80" rx="8" fill="#10111A" stroke="#FF5500" stroke-width="1.2"/>
-    <rect width="330" height="22" rx="8" fill="#1D151F" stroke="#FF5500" stroke-width="0.8"/>
-    <text x="12" y="15" class="mono" font-size="9.5" font-weight="bold" fill="#FF7700">FFMPEG TRANSCODER // libmp3lame</text>
-    <text x="12" y="42" class="mono node-title" fill="#FFFFFF">320 kbps MP3 Transcode</text>
-    <text x="12" y="58" class="mono node-sub">Demuxes raw stream &amp; encodes high-fidelity MP3</text>
-    <text x="12" y="70" class="mono node-sub">Quality: 320 kbps (configurable via settings.py)</text>
+  <!-- Convergence to FFmpeg & Processing -->
+  <!-- Direct to Transcode -->
+  <path d="M 220 286 L 220 310 L 370 310 L 370 322" fill="none" stroke="#FF7A00" stroke-width="1.6"/>
+  <polygon points="370,326 366,318 374,318" fill="#FF7A00"/>
+
+  <!-- Web to Transcode / Direct output -->
+  <path d="M 600 286 L 600 310 L 450 310 L 450 322" fill="none" stroke="#00D9FF" stroke-width="1.6"/>
+  <polygon points="450,326 446,318 454,318" fill="#00D9FF"/>
+
+  <!-- ==================== STAGE 4: FFMPEG TRANSCODE & METADATA ==================== -->
+  <g transform="translate(260, 326)">
+    <rect width="300" height="42" rx="8" fill="#11151A" stroke="#A855F7" stroke-width="1.2"/>
+    <text x="14" y="20" class="mono title">FFmpeg Transcoder &amp; Mutagen ID3</text>
+    <text x="14" y="33" class="mono sub">320 kbps MP3 conversion • Title, Artist, Cover Art</text>
   </g>
 
-  <g transform="translate(556, 275)">
-    <rect width="364" height="80" rx="8" fill="#120D1D" stroke="#8A2BE2" stroke-width="1.2"/>
-    <rect width="364" height="22" rx="8" fill="#1C132D" stroke="#8A2BE2" stroke-width="0.8"/>
-    <text x="12" y="15" class="mono" font-size="9.5" font-weight="bold" fill="#C084FC">METADATA ENRICHMENT // core/metadata.py</text>
-    <text x="12" y="42" class="mono node-title" fill="#FFFFFF">Mutagen ID3v2.3 Tagger</text>
-    <text x="12" y="58" class="mono node-sub">Injects TIT2 (Title), TPE1 (Artist), TALB (Album)</text>
-    <text x="12" y="70" class="mono node-sub">Embeds APIC (Thumbnail Front Cover Art)</text>
+  <!-- Connector: Transcode -> Output -->
+  <path d="M 410 368 L 410 388" fill="none" stroke="#22C55E" stroke-width="1.8"/>
+  <polygon points="410,392 406,384 414,384" fill="#22C55E"/>
+
+  <!-- ==================== STAGE 5: TARGET MP3 ==================== -->
+  <g transform="translate(300, 392)">
+    <rect width="220" height="34" rx="7" fill="#0B1A13" stroke="#22C55E" stroke-width="1.2" filter="url(#softGlow)"/>
+    <circle cx="16" cy="17" r="4" fill="#22C55E"/>
+    <text x="28" y="21" class="mono" font-size="12" font-weight="700" fill="#22C55E">storage/downloads/*.mp3</text>
   </g>
-
-  <!-- Conduits: Direct Engine to FFmpeg to Mutagen -->
-  <path d="M 738 112 L 738 135 L 345 135 L 345 275" fill="none" stroke="#FF7700" stroke-width="1.6"/>
-  <polygon points="345,275 341,268 349,268" fill="#FF7700"/>
-
-  <path d="M 510 315 L 550 315" fill="none" stroke="#FF7700" stroke-width="1.6"/>
-  <polygon points="554,315 547,311 547,319" fill="#FF7700"/>
-
-  <!-- Stage 5: Output Artifacts -->
-  <g transform="translate(370, 390)">
-    <rect width="320" height="65" rx="8" fill="#0A1813" stroke="#00FF66" stroke-width="1.3" filter="url(#glowLight)"/>
-    <rect width="320" height="20" rx="8" fill="#0F241C" stroke="#00FF66" stroke-width="0.8"/>
-    <text x="12" y="14" class="mono" font-size="9.5" font-weight="bold" fill="#00FF66">TARGET OUTPUT STORAGE</text>
-    <text x="12" y="38" class="mono node-title" fill="#FFFFFF">storage/downloads/*.mp3</text>
-    <text x="12" y="54" class="mono node-sub">Enriched MP3 with tags &amp; album art</text>
-  </g>
-
-  <!-- Conduits to Output -->
-  <!-- From Mutagen -->
-  <path d="M 738 355 L 738 375 L 530 375 L 530 390" fill="none" stroke="#8A2BE2" stroke-width="1.6"/>
-  <polygon points="530,390 526,383 534,383" fill="#8A2BE2"/>
-
-  <!-- From Web Engine -->
-  <path d="M 920 200 L 935 200 L 935 375 L 610 375 L 610 390" fill="none" stroke="#00E5FF" stroke-width="1.4" stroke-dasharray="3 3"/>
-  <polygon points="610,390 606,383 614,383" fill="#00E5FF"/>
-
-  <!-- Diagnostic logs node -->
-  <g transform="translate(40, 390)">
-    <rect width="240" height="65" rx="8" fill="#0E131F" stroke="#4B5563" stroke-width="1"/>
-    <text x="12" y="24" class="mono" font-size="10" font-weight="bold" fill="#9CA3AF">PERSISTENT AUDIT LOGS</text>
-    <text x="12" y="42" class="mono" font-size="11" fill="#E5E7EB">logs/pipeline.log</text>
-    <text x="12" y="56" class="mono node-sub">Timestamped error &amp; retry tracking</text>
-  </g>
-
-  <path d="M 280 422 L 370 422" fill="none" stroke="#4B5563" stroke-width="1" stroke-dasharray="3 3"/>
 </svg>

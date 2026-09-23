@@ -3,10 +3,6 @@
 # Blank lines and lines starting with '#' will be ignored.
 
 # Sample 1: Alan Walker - Fade [NCS Release]
-https://www.youtube.com/watch?v=bM7SZ5SBzyY
+#PASTE_YOUR_LINK_HERE
 
-# Sample 2: Cartoon - On & On (feat. Daniel Levi) [NCS Release]
-https://www.youtube.com/watch?v=K4DyBUG242c
-
-# Sample 3: DEAF KEV - Invincible [NCS Release]
-https://www.youtube.com/watch?v=J2X5mJ3HDYE
+https://youtu.be/YKLX3QbKBg0

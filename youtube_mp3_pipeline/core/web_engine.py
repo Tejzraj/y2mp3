@@ -188,11 +188,12 @@ class WebFlagaEngine:
                 logger.info("[Web Engine] Conversion initiated. Waiting for download button...")
 
                 # 4. Wait for conversion to finish and download button to appear
-                # flagaflaga renders a download button or direct link once HTMX conversion resolves
+                # Note: Avoid matching header navbar links like "Youtube Downloader"
                 download_selectors = [
-                    'a:has-text("Download")',
-                    'button:has-text("Download")',
-                    'a[href*="download"]',
+                    'main a:has-text("Download")',
+                    'main button:has-text("Download")',
+                    'a:text-is("Download")',
+                    'button:text-is("Download")',
                     'a[download]',
                     '.btn-download',
                     'a.download-btn',
