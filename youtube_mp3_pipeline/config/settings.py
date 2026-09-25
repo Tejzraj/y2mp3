@@ -19,7 +19,7 @@ LOG_FILE: Path = LOG_DIR / "pipeline.log"
 DEFAULT_ENGINE: str = "direct"
 
 # Default audio conversion settings
-DEFAULT_AUDIO_QUALITY: str = "320"  # kbps (high quality)
+DEFAULT_AUDIO_QUALITY: str = "160"  # kbps (high quality)
 DEFAULT_AUDIO_FORMAT: str = "bestaudio/best"
 
 # Web automation engine settings (for flagaflaga.pl)

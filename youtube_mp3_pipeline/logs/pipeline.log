@@ -39,3 +39,7 @@
 2026-09-23 22:43:29 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/YKLX3QbKBg0
 2026-09-23 22:43:36 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Joker BGM Song (Bass Boosted).mp3'
 2026-09-23 22:43:36 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Joker BGM Song (Bass Boosted)' -> Joker BGM Song (Bass Boosted).mp3
+2026-09-25 16:58:22 [INFO] [core.direct_engine]: Loaded 1 URL(s) from 'links.txt'
+2026-09-25 16:58:22 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/YKLX3QbKBg0
+2026-09-25 16:58:28 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Joker BGM Song (Bass Boosted).mp3'
+2026-09-25 16:58:28 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Joker BGM Song (Bass Boosted)' -> Joker BGM Song (Bass Boosted).mp3
