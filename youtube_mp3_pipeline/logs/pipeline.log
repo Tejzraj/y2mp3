@@ -43,3 +43,28 @@
 2026-09-25 16:58:22 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/YKLX3QbKBg0
 2026-09-25 16:58:28 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Joker BGM Song (Bass Boosted).mp3'
 2026-09-25 16:58:28 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Joker BGM Song (Bass Boosted)' -> Joker BGM Song (Bass Boosted).mp3
+2026-09-26 19:20:41 [INFO] [core.direct_engine]: Loaded 8 URL(s) from 'links.txt'
+2026-09-26 19:20:41 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/gRjKULlhot4
+2026-09-26 19:20:54 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Karna - Malare Mounama Video ｜ Arjun, Ranjitha ｜ Vidyasagar.mp3'
+2026-09-26 19:20:54 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Karna - Malare Mounama Video | Arjun, Ranjitha | Vidyasagar' -> Karna - Malare Mounama Video ｜ Arjun, Ranjitha ｜ Vidyasagar.mp3
+2026-09-26 19:20:54 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/rUeyfai1ddc
+2026-09-26 19:21:06 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Kuhu Kuhu Kogile - HD Video Song ｜ Srimurali ｜ Hariharan ｜ K.S.Chithra ｜ S A Rajkumar.mp3'
+2026-09-26 19:21:06 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Kuhu Kuhu Kogile - HD Video Song | Srimurali | Hariharan | K.S.Chithra | S A Rajkumar' -> Kuhu Kuhu Kogile - HD Video Song ｜ Srimurali ｜ Hariharan ｜ K.S.Chithra ｜ S A Rajkumar.mp3
+2026-09-26 19:21:06 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/8CMxV1O5VHw
+2026-09-26 19:21:16 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Oora Kannu ｜ Lyrical Video ｜ Kiccha Sudeep ｜ Ramya ｜ Sandeep Chowta ｜ Yogaraj Bhat ｜ Ranga S.S.L.C..mp3'
+2026-09-26 19:21:16 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Oora Kannu | Lyrical Video | Kiccha Sudeep | Ramya | Sandeep Chowta | Yogaraj Bhat | Ranga S.S.L.C.' -> Oora Kannu ｜ Lyrical Video ｜ Kiccha Sudeep ｜ Ramya ｜ Sandeep Chowta ｜ Yogaraj Bhat ｜ Ranga S.S.L.C..mp3
+2026-09-26 19:21:16 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/_77kPLNFI6E
+2026-09-26 19:21:29 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Yuddha Kanda Video Songs ｜ Sole Illa Ninna Haadu Video Song (Sad) ｜ V Ravichandran ｜ Hamsalekha.mp3'
+2026-09-26 19:21:29 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Yuddha Kanda Video Songs | Sole Illa Ninna Haadu Video Song (Sad) | V Ravichandran | Hamsalekha' -> Yuddha Kanda Video Songs ｜ Sole Illa Ninna Haadu Video Song (Sad) ｜ V Ravichandran ｜ Hamsalekha.mp3
+2026-09-26 19:21:29 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/oRZ0cfZ9SeU
+2026-09-26 19:21:42 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Vilen - Ek Raat (Official Video).mp3'
+2026-09-26 19:21:42 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Vilen - Ek Raat (Official Video)' -> Vilen - Ek Raat (Official Video).mp3
+2026-09-26 19:21:42 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/xvT1jH8B9AM
+2026-09-26 19:21:54 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'KALYANI (with Shreya Ghoshal) OFFICIAL MUSIC VIDEO ｜ ARJN ｜ KDS ｜ FIFTY4 ｜ RONN ｜ SHREYA GHOSHAL ｜.mp3'
+2026-09-26 19:21:54 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'KALYANI (with Shreya Ghoshal) OFFICIAL MUSIC VIDEO | ARJN | KDS | FIFTY4 | RONN | SHREYA GHOSHAL |' -> KALYANI (with Shreya Ghoshal) OFFICIAL MUSIC VIDEO ｜ ARJN ｜ KDS ｜ FIFTY4 ｜ RONN ｜ SHREYA GHOSHAL ｜.mp3
+2026-09-26 19:21:54 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/ce_8oho9AaA
+2026-09-26 19:22:01 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Gaja Movie Songs ： Maathu Nannavalu Video Song ｜ Darshan ｜ Navya Nair ｜ Sonu Nigam ｜ V Harikrishna.mp3'
+2026-09-26 19:22:01 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Gaja Movie Songs : Maathu Nannavalu Video Song | Darshan | Navya Nair | Sonu Nigam | V Harikrishna' -> Gaja Movie Songs ： Maathu Nannavalu Video Song ｜ Darshan ｜ Navya Nair ｜ Sonu Nigam ｜ V Harikrishna.mp3
+2026-09-26 19:22:01 [INFO] [core.direct_engine]: [Direct Engine] Processing URL: https://youtu.be/Vn6pTlPuF1Q
+2026-09-26 19:22:12 [INFO] [core.metadata]: Successfully embedded ID3 metadata into 'Nooru Janmaku - Video Song ｜ America America - Movie ｜Ramesh Aravind ｜Rajesh Krishnan ｜Jhankar Music.mp3'
+2026-09-26 19:22:12 [INFO] [core.direct_engine]: [Direct Engine] Completed: 'Nooru Janmaku - Video Song | America America - Movie |Ramesh Aravind |Rajesh Krishnan |Jhankar Music' -> Nooru Janmaku - Video Song ｜ America America - Movie ｜Ramesh Aravind ｜Rajesh Krishnan ｜Jhankar Music.mp3
